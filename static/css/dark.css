@@ -1,0 +1,26 @@
+:root{
+	--mainColor:#15202B;
+	--secondaryColor:#192734;
+
+	--borderColor:#164D56;
+
+	--mainText:#fff;
+	--secondaryText:#eeeeee;
+
+	--themeDotborder:#FFF;
+
+	--bioBG:rgb(25, 39, 52, 0.8);
+	--bioSD:rgba(17, 25, 33, 1);
+
+
+	--buttonColor:#17a2b8;
+
+}
+
+#light-mode {
+	background-color: #fff;
+}
+
+.project-prev p {
+	color: #fff;
+}

@@ -1,0 +1,382 @@
+:root {
+    --mainColor: #eaeaea;
+    --secondaryColor: #fff;
+
+    --borderColor:#c1c1c1;
+
+    --mainText: black;
+    --secondaryText:#4b5156;
+
+    --themeDotborder: #24292e;
+
+    --bioBG: rgb(251,249,243,0.8);
+    --bioSD: rgba(240,234,214,1);
+
+    --buttonColor: black;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+    color: var(--mainText);
+    font-family: 'Russo One', sans-serif;
+    font-weight: 500;
+}
+
+p, li, span, label, input, textarea {
+    color: var(--secondaryText);
+    font-family: 'Roboto Mono', monospace;
+}
+
+a {
+    text-decoration: none; 
+    color: #17a2b8;
+}
+ul { 
+    list-style: none;
+    padding-left: 0;
+}
+
+h1 { font-size: 56px;}
+h2 { font-size: 36px;}
+h3 { font-size: 28px;}
+h4 { font-size: 24px;}
+h5 { font-size: 20px;}
+h6 { font-size: 16px;}
+
+.s1 {
+    background-color: var(--mainColor);
+    border-bottom: 1px solid var(--borderColor);
+    overflow: auto;
+}
+
+.s2 {
+    background-color: var(--secondaryColor);
+    border-bottom: 1px solid var(--borderColor);
+    overflow: auto;
+}
+
+.main-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.greet-wr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10em;
+    
+}
+
+.intro {
+    background-color: var(--secondaryColor);
+    border: 1px solid var(--borderColor);
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'navbar navbar'
+        'left-clm right-clm'
+    ;
+}
+
+.navbar {
+    grid-area: navbar;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--mainColor);
+    border-bottom: 1px solid var(--borderColor);
+}
+.navbar a {
+    color: var(--mainText);
+}
+
+.circles{
+    display: flex;
+    gap: 7px;
+    padding: 10px;
+}
+
+.circle{
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+#cl1 {
+    background-color: #FC6058;
+}
+#cl2 {
+    background-color: #FEC02F;
+}
+#cl3 {
+    background-color: #2ACA3E;
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+    padding-right: 10px;
+}
+
+.left-clm {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    grid-area: left-clm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pp {
+    border: 2px solid var(--borderColor);
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+}
+.left-theme-msg {
+    text-align: center;
+    line-height: 0;
+}
+.theme-dots {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.dot {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 2px solid var(--themeDotborder);
+    cursor: pointer;
+}
+
+.dot:hover{
+    border-width: 5px;
+}
+
+#ligh-mode{
+    background-color: #fff;
+}
+#dark-mode{
+    background-color: #192734;
+}
+#purple-mode{
+    background-color: #7E4C74;
+}
+
+.theme-note{
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.right-clm {
+    grid-area: right-clm;
+    display: flex;
+    align-items: center;
+    
+}
+
+.bio {
+    width: 300px;
+    border: 2px solid #17a2b8;
+    padding: 15px;
+    background-color: var(--bioBG);
+    position: relative;
+
+    box-shadow: -38px -36px 0px 0px var(--bioSD);
+    -webkit-box-shadow: -38px -36px 0px 0px var(--bioSD);
+    -moz-box-shadow: -38px -36px 0px 0px var(--bioSD);
+}
+
+.corner {
+    height: 5px;
+    width: 5px;
+    border: 2px solid #17a2b8;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #fff;
+}
+
+#top-left{
+    top: -5px;
+    left: -5px;
+}
+#top-right{
+    top: -5px;
+    right: -5px;
+}
+#bottom-left{
+    bottom: -5px;
+    left: -5px;
+}
+#bottom-right{
+    bottom: -5px;
+    right: -5px;
+}
+
+.about-container{
+    display: flex;
+    gap: 80px;
+    padding: 50px 0 50px 0;
+}
+
+
+.skills {
+    background-color: var(--bioSD);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10em; 
+}
+
+
+.socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 35px;
+   
+}
+.social-img {
+    height: 300px;
+    width: 600px;
+    object-fit: cover;
+}
+
+.sl-wr {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projects{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+.project {
+    width: 330px;
+    border: 1px solid var(--borderColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: -2px 7px 21px -9px rgb(0 0 0 / 75%);
+}
+.project-img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.project-prev{
+    background-color: var(--secondaryColor);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.project-title{
+    margin: 0;
+}
+.project-desc{
+    color:#4b5156;
+    font-size: 14px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form {
+    display: block;
+	max-width: 600px;
+	margin: 0 auto;
+	border: 1px solid var(--borderColor);
+	padding: 15px;
+	border-radius: 5px;
+	background-color: var(--mainColor);
+	margin-bottom: 50px;
+}
+
+.contact-form label{
+	line-height: 2.7em;
+}
+
+.input-field{
+    width: 100%;
+	padding-top: 10px;
+	padding-bottom:10px; 
+	background-color: var(--secondaryColor);
+	border-radius: 5px;
+	border:1px solid var(--borderColor);
+	font-size: 14px;
+}
+.btn {
+    margin-top: 10px;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom:10px; 
+	color: #fff;
+	background-color: var(--buttonColor);
+	border:none;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .main-container{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .intro{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'navbar'
+            'left-clm'
+            'right-clm'
+        ;
+    }
+
+    .right-clm{
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 50px;  
+         
+    }
+    .about-container{
+        flex-wrap: wrap;
+    }
+
+    .social-img{
+        width: 450px;
+    }
+    .projects{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
